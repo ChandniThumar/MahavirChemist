@@ -1,0 +1,14 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %} Shop{% endblock title %}
+
+{% block body %}
+<div class="container">
+    {{response}}
+    <div class="col my-4">
+        <h2>Payment status regarding your order Id is : {{order.order_id}}</h2>
+        ORDER SUCCES
+    <h4> To Continue Shopping... click <a href="/shop">here</a> </h4>
+    </div>
+</div>
+{% endblock body %}
